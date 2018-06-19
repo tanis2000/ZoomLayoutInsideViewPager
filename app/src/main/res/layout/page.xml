@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.otaliastudios.zoom.ZoomLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/zoom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@android:color/holo_purple"
+    android:layerType="none"
+    app:hasClickableChildren="false"
+    app:maxZoom="1.0"
+    app:maxZoomType="zoom"
+    app:minZoom="1.0"
+    app:minZoomType="zoom"
+    app:overPinchable="true"
+    app:overScrollHorizontal="false"
+    app:overScrollVertical="false"
+    >
+
+    <!--
+    app:horizontalPanEnabled="true"
+    app:verticalPanEnabled="true"
+    app:zoomEnabled="true"
+    -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/img_1"
+            />
+    </FrameLayout>
+
+</com.otaliastudios.zoom.ZoomLayout>
+
